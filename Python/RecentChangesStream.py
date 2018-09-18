@@ -3,10 +3,10 @@ import pyodbc
 from sseclient import SSEClient as EventSource
 
 URL = 'https://stream.wikimedia.org/v2/stream/recentchange'
-SERVER = 'recentchangesstream.database.windows.net'
+SERVER = 'yourazuredatabase.database.windows.net'
 DATABASE = 'RecentChangesStream'
-USERNAME = 'rcsuser'
-PASSWORD = 'rcs1234!'
+USERNAME = 'yourazureaccount'
+PASSWORD = 'yourazureaccountpassword!'
 DRIVER = '{ODBC Driver 17 for SQL Server}'
 
 eventdict = {'edit': 1, 'external': 2, 'new': 3, 'log': 4, 'categorize': 5}
